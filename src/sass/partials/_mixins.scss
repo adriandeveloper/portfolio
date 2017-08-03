@@ -1,0 +1,5 @@
+// get all fonts by specifying the font name
+@mixin google-font($font) {
+  $font: unquote($font);
+  @import url(https://fonts.googleapis.com/css?family=#{$font})
+}
