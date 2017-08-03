@@ -30,14 +30,7 @@ module.exports = {
       {
         test: /\.(sass|scss)$/,
         use: 'sass-loader'
-      },
-      // {
-      //   test: /\.(sass|scss)$/,
-      //   loader: ExtractTextPlugin.extract({
-      //     fallbackLoader: 'style-loader',
-      //     loader: 'css-loader!sass-loader',
-      //   })
-      // }
+      }
     ]
   },
   plugins: [
