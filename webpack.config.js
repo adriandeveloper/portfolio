@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const VENDOR_LIBS = [
   'react', 'redux', 'react-redux', 'react-dom', 'redux-thunk', 'classnames', 'react-router'
@@ -29,7 +30,14 @@ module.exports = {
       {
         test: /\.(sass|scss)$/,
         use: 'sass-loader'
-      }
+      },
+      // {
+      //   test: /\.(sass|scss)$/,
+      //   loader: ExtractTextPlugin.extract({
+      //     fallbackLoader: 'style-loader',
+      //     loader: 'css-loader!sass-loader',
+      //   })
+      // }
     ]
   },
   plugins: [
