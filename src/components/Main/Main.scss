@@ -1,0 +1,39 @@
+@import '../../sass/partials/functions';
+@import '../../sass/partials/mixins';
+@import '../../sass/partials/variables';
+
+.mainLi {
+  color: $subtext-color;
+  font-family: $sub-font;
+  font-size: 27px;
+  font-weight: 300;
+  display: inline;
+}
+
+.mainUl {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ .myName {
+   width: 222px;
+   font-family: $main-font;
+   font-size: 30px;
+   color: $text-color;
+  // border: 1px dashed pink;
+ }
+
+ .mainWrapper {
+  // border: 1px solid red;
+  position: absolute;
+  top: 46.2%;
+  left: 11.7%;
+  margin: 0;
+
+ }
+.headContainer {
+  position: absolute;
+  top: 2.7%;
+}
+
