@@ -11,7 +11,7 @@
     "start": "webpack-dev-server",
     "test": "jest",
     "build": "NODE_ENV=production npm run clean && webpack -p",
-    "deploy": "npm run build",
+    "deploy": "npm run build && git checkout -- docs/CNAME",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
