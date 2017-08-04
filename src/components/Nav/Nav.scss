@@ -12,13 +12,14 @@
 
 .navContainer a {
   color: $text-color;
-  font-family: $main-font;
+  font-family: $sub-font;
   font-weight: 300;
   font-size: 24px;
   margin-right: 0.4em;
   text-decoration: none;
   list-style-type: none;
   overflow: hidden;
+  margin-top: 0.4em;
 
 }
 

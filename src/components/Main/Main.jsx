@@ -3,7 +3,7 @@ import Social from '../Social/Social.jsx';
 import styles from './Main.scss';
 
 const Main = () => (
-  <section className="mainWrapper">
+  <main className="mainWrapper">
     <div>
       <p className="myName">adrian thomas</p>
     </div>
@@ -17,7 +17,7 @@ const Main = () => (
       </ul>
     </div>
     <Social />
-  </section>
+  </main>
 );
 
 export default Main;
