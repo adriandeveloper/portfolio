@@ -24,7 +24,19 @@ module.exports = {
       },
       {
         test: /\.(sass|scss)$/,
-        use: ['style-loader', 'css-loader']
+        use: 'style-loader'
+      },
+      {
+        test: /\.scss$/,
+        loader: 'css-loader',
+        query: {
+          modules: true,
+          localIdentName: '[name]_[local]_[hash:base64:5]',
+          modules: true,
+          sourceMap: true,
+          url: false
+
+        }
       },
       {
         test: /\.(sass|scss)$/,
