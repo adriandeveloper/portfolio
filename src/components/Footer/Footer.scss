@@ -1,4 +1,7 @@
-// @import '../../sass/partials/functions';
-// @import '../../sass/partials/mixins';
-// @import '../../sass/partials/variables';
+@import '../../sass/partials/functions';
+@import '../../sass/partials/mixins';
+@import '../../sass/partials/variables';
 
+.footerContaine {
+  display: flex,
+}

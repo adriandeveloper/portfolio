@@ -9,11 +9,11 @@ const VENDOR_LIBS = [
 module.exports = {
   entry: {
     bundle: './src/index.js',
-    vendor: VENDOR_LIBS
+    vendor: VENDOR_LIBS,
   },
   output: {
     path: path.resolve(__dirname, 'docs'),
-    filename: '[name].[chunkhash].js'
+    filename: '[name].[chunkhash].js',
   },
   module: {
     loaders: [
@@ -24,7 +24,7 @@ module.exports = {
       },
       {
         test: /\.(sass|scss)$/,
-        use: 'style-loader'
+        use: 'style-loader',
       },
       {
         test: /\.scss$/,
@@ -34,28 +34,31 @@ module.exports = {
           localIdentName: '[name]_[local]_[hash:base64:5]',
           modules: true,
           sourceMap: true,
-          url: false
+          url: false,
 
         }
       },
       {
         test: /\.(sass|scss)$/,
-        use: 'sass-loader'
+        use: 'sass-loader',
       }
     ]
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
-      names: ['vendor', 'manifest']
+      names: ['vendor', 'manifest'],
     }),
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: 'index.html',
-      inject: 'body'
+      inject: 'body',
     }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     }),
-    new webpack.optimize.UglifyJsPlugin()
-  ]
+    // new webpack.optimize.UglifyJsPlugin()
+  ],
+  devServer: {
+    host: '0.0.0.0'
+  }
 };

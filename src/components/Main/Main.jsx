@@ -1,5 +1,4 @@
 import React from 'react';
-import Social from '../Social/Social.jsx';
 import styles from './Main.scss';
 
 const Main = () => (
@@ -16,7 +15,6 @@ const Main = () => (
         <li className={styles.mainLi}>Full Stack engineer</li>
       </ul>
     </div>
-    <Social />
   </main>
 );
 
