@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Main.scss';
+import Social from '../Social/Social.jsx';
 
 const Main = () => (
   <main className={styles.mainWrapper}>
@@ -14,6 +15,9 @@ const Main = () => (
         <li className={styles.mainLi}>|</li>
         <li className={styles.mainLi}>Full Stack engineer</li>
       </ul>
+    </div>
+    <div>
+      <Social />
     </div>
   </main>
 );
