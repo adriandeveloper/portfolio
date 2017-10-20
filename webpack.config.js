@@ -32,7 +32,6 @@ module.exports = {
         query: {
           modules: true,
           localIdentName: '[name]_[local]_[hash:base64:5]',
-          modules: true,
           sourceMap: true,
           url: false,
 
@@ -56,7 +55,7 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     }),
-    // new webpack.optimize.UglifyJsPlugin()
+    new webpack.optimize.UglifyJsPlugin()
   ],
   devServer: {
     host: '0.0.0.0'

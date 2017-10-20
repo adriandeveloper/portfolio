@@ -4,7 +4,6 @@ import Nav from '../Nav/Nav.jsx';
 
 const Header = () => (
   <header className="headerContainer">
-    <Nav />
   </header>
 );
 
