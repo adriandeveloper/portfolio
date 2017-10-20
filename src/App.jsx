@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.scss';
 import Header from './components/Header/Header.jsx';
+import Social from './components/Social/Social.jsx';
 import Main from './components/Main/Main.jsx';
-import Footer from './components/Footer/Footer.jsx';
+
 const App = () => (
   <div>
     <div>
@@ -12,7 +13,7 @@ const App = () => (
       <Main />
     </div>
     <div>
-      <Footer />
+      <Social />
     </div>
   </div>
 );
