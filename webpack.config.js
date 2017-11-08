@@ -55,9 +55,9 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     }),
-    new webpack.optimize.UglifyJsPlugin()
+    // new webpack.optimize.UglifyJsPlugin()
   ],
   devServer: {
-    host: '0.0.0.0'
-  }
+    host: '0.0.0.0',
+  },
 };
