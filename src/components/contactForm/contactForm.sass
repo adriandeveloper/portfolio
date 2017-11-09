@@ -1,0 +1,52 @@
+@import '../../styles/variables'
+
+.container
+  // display: flex
+  // justify-content: center
+  // align-items: center
+
+.nameInput, .emailInput, .messageInput
+  color: $skillsFooter
+  font-family: $mainFont
+  outline: none
+  width: 100%
+  margin-bottom: 1em
+  padding: 0.6em .4em
+  background: $inputField 
+  border: 1px solid
+  flex-grow: 1
+  font-size: 1.22rem
+  line-height: 2rem
+  vertical-align: middle
+  border: none
+  positon: relative
+  transition: border-bottom .25s ease-in-out 
+  &:focus
+    border-bottom: 1px solid $macaroni-and-cheese
+  &::-webkit-input-placeholder
+    color: gray
+  
+button
+  background-color: lighten($macaroni-and-cheese, 10%)
+  border: none
+  padding: 0.8em 1.2em
+  color: $black
+  font-family: $navFont
+  font-size: 1.21rem
+  text-decoration: none
+  margin: 0.25em 0.125em
+  cursor: pointer
+  border-radius: 0.125em
+  width: 100%
+  box-shadow: 0 6px 10px 0 rgba(0,0,0, .1)
+  transition: background-color .15s ease-in-out
+  &:hover
+    background-color: $macaroni-and-cheese
+    transition: background-color .15s ease-in-out
+
+ 
+// form
+//   display: flex
+//   flex-direction: column
+//   justify-content: center
+//   align-items: center
