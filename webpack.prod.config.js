@@ -17,7 +17,7 @@ module.exports = {
   ],
   output: {
     path: path.join(__dirname, 'public'),
-    filename: 'index_bundle.js'
+    filename: 'index_bundle.js',
   },
   module: {
     loaders: [
@@ -29,8 +29,7 @@ module.exports = {
       },
       { test: /\.(sass|scss)$/, use: 'sass-loader'},
       { test: /\.png$/, loader: 'file-loader'},
-      { test: /\.(tff|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/, loader: 'file-loader'},
-      { test: /\.(png|jpg|)$/, loader: 'url-loader?limit=200000' }
+      { test: /\.(tff|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/, loader: 'file-loader'}
     ]
   },
   resolve: { extensions: ['.js', '.jsx']},
@@ -38,6 +37,14 @@ module.exports = {
   plugins: [
     HtmlWebpackPluginConfig,
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoEmitOnErrorsPlugin()
+    new webpack.NoEmitOnErrorsPlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      minimize: true, compress: { warnings: false }
+    }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
+    })
   ] 
 }

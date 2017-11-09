@@ -1,0 +1,49 @@
+@import '../../styles/variables'
+@import '../../styles/mixins'
+
+.container
+  height: 1034px
+  position: relative
+  background-image: linear-gradient(to bottom, #ffffff, #ebebeb);
+  z-index: -99999999
+
+.aboutMe
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  margin-top: 8%
+
+.mainDesc 
+  font-family: $mainFont
+  font-size: 2.937rem
+  text-align: left
+  color: $txtPrimary
+
+.subDesc
+  font-family: $mainFont
+  font-size: 1.38rem
+  font-weight: 300
+  letter-spacing: 0.04rem
+  text-align: left
+  color: $black
+
+p
+  margin-left: 40px 
+
+.bgImg
+  position: relative
+  background: url('/src/assets/images/mug.png')
+  width: 439px
+  height: 656px
+  &:after	
+    content: ''
+    display: block
+    width: 80%
+    height: 100px
+    box-shadow: 0 2px 87px 17px rgba(0,0,0,.55)
+    bottom: 0
+    position: absolute
+    left: 10%
+    z-index: -1
+
