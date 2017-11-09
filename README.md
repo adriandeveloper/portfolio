@@ -1,4 +1,4 @@
-# Basic React-Redux Boiler Plate App README
+# Adrian's Portfolio README
 
 #### Dependency Installation
 ```
@@ -9,7 +9,10 @@ npm install
 ```
 npm run dev
 ```
-
+#### Deploy
+```
+npm run deploy
+```
 
 ToDo:
   - Add Local Test Build
