@@ -6,12 +6,6 @@
  * only setup and boilerplate code.
  */
 import React from 'react';
-<<<<<<< HEAD
-import ReactDOM from 'react-dom';
-import App from './App.jsx';
-
-ReactDOM.render(<App />, document.getElementById('root'));
-=======
 import ReactDom from "react-dom";
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
@@ -38,4 +32,3 @@ if (module.hot) {
   module.hot.accept('./components/app', () => { render(App)
   });
 }
->>>>>>> dev
