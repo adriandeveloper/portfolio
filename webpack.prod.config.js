@@ -11,6 +11,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 
 module.exports = {
   devtool: 'source-map',
+  // context: path.join(__dirname, 'src'),
   entry: [
     'babel-polyfill',
     'react-hot-loader/patch',
